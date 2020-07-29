@@ -5,18 +5,34 @@ h1{
 	text-align: center;
 	
 }
+body{
+	margin: 0px;
+	padding: 0px;
+}
 
 p{
-	border: 1px solid black;
-	padding: 4px;
+	border: 0px; 
+	padding: 0px;
 	font-family:Helvetica;
 	
 }
 
-#p1,#p2,#p3{
-		background-color:gray;
+.row{
+		width: 100%;
 	}
-		
+
+	.col-lg-3,.col-md-2,.col-md-1,.col-sm-1{
+		background-color:gray;
+		border: 1px solid black;
+		margin: 6px;
+	}
+	#sp1,#sp2,#sp3{
+		border-left: 1px solid black;
+		border-bottom: 1px solid black;
+		float: right;
+		text-align: center;
+		margin: 0px;
+	}
 	#sp1{
 		background-color:red;
 	}
@@ -27,62 +43,30 @@ p{
 		background-color:rgba(255, 99, 71, 0.5);
 	}
 
-.row{
-		width: 100%;
-		position: relative;
-		top: 0px;
-		right: 0px;
-	}
 
 @media (min-width: 992px){
 	
 	.col-lg-3{
 		width: 32%;
 		float: left;
-		margin: 4px;
 	}
-	.extra{
-		width: 32%;
-		float: right;
-		text-align:center;
-	}
-	
-	
-#p1{
-	margin-left: 2px;
-}
 }
 
 @media(min-width:768px) and (max-width: 991px){
 	.col-md-2{
 		width: 48%;
 		float: left;
-		margin: 4px;
 	}
 	.col-md-1{
 		width:98%;
-		margin:4px;
 		clear:both;
 	}	
-	.col-md-3{
-		width:32%;
-		float: right;
-		text-align:center;
-		
-	}
 }
 
 @media(max-width:767px){
 .col-sm-1{
 		width:98%;
-		margin:4px;
-		background-color: gray;
-		
-	}
-.col-sm-3{
-		width:32%;
-		text-align: center;
-		float: right;
+		clear: both;
 	}	
 	
 }	
