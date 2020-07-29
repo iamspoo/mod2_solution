@@ -29,6 +29,7 @@ p{
 	#sp1,#sp2,#sp3{
 		border-left: 1px solid black;
 		border-bottom: 1px solid black;
+		padding: 4px;
 		float: right;
 		text-align: center;
 		margin: 0px;
